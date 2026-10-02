@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DSA Visualizer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="brand"><svg viewBox="0 0 40 40" width="44" height="44" aria-hidden="true"><rect x="3" y="22" width="7" height="15" rx="2" fill="#e0a100"/><rect x="13" y="12" width="7" height="25" rx="2" fill="#2a9d8f"/><rect x="23" y="17" width="7" height="20" rx="2" fill="#d1345b"/><rect x="33" y="5" width="5" height="32" rx="2" fill="#6f93c4"/></svg><div><h1>DSA Visualizer</h1><p>Watch sorting, searching and graph algorithms run one step at a time.</p></div></div></header>
+<div class="app">
+<nav id="nav"></nav>
+<main>
+ <div class="bar">
+  <button class="b main" id="play"></button>
+  <button class="b" id="step">Step</button>
+  <button class="b" id="reset">Reset</button>
+  <button class="b" id="shuffle">New data</button>
+ </div>
+ <div class="bar" id="tools">
+  <span class="tl">Click the grid to place</span>
+  <div class="seg" role="radiogroup" aria-label="Placement tool">
+   <input type="radio" name="tool" id="t-start" value="start"><label for="t-start"><i class="dot s"></i>Start point</label>
+   <input type="radio" name="tool" id="t-end" value="end"><label for="t-end"><i class="dot e"></i>End point</label>
+   <input type="radio" name="tool" id="t-wall" value="wall" checked><label for="t-wall"><i class="dot w"></i>Walls</label>
+  </div>
+ </div>
+ <div class="bar">
+  <label>Speed <input type="range" id="speed" min="1" max="100" value="70"></label>
+  <label id="sizeL">Size <input type="range" id="size" min="8" max="40" value="20"></label>
+  <label id="tgtL">Target <input type="number" id="tgt"></label>
+ </div>
+ <div id="stage" aria-live="off"></div>
+ <div id="msg"></div>
+ <div class="meta"><span id="steps">Steps: 0</span></div>
+ <div class="legend" id="legend"></div>
+ <div id="info"></div>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
