@@ -2,9 +2,7 @@
 
 A simple web app that shows how common Data Structures and Algorithms work, one step at a time. Pick an algorithm, press **Start**, and watch it run.
 
-Made by **Krrish Saini**.
 
-Inspired by [Algorithms Visualizer](https://tpspace.github.io/Algorithms-Visualizer/).
 
 ## Algorithms
 
@@ -63,6 +61,4 @@ No installation is needed.
 1. Write a generator function in `script.js` that updates the shared state and calls `yield` after each visible step.
 2. Add an entry for it in the `ALGOS` object and in the `GROUPS` list.
 
-## Author
-
-Krrish Saini
+Made by **Krrish Saini**.
